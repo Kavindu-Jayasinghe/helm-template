@@ -1,0 +1,20 @@
+replicaCount: 1
+
+image:
+  repository: <image >
+  pullPolicy: IfNotPresent
+  tag: latest
+
+
+
+db:
+  username: ceftswitchdbuser	
+  password: 6ryPb2#fsK5FXN1
+  host: 10.14.192.3
+  port: 3306
+  name: db
+
+service:
+  type: LoadBalancer
+  Port: 8080
+  targetPort: 8080

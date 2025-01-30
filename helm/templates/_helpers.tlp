@@ -1,0 +1,7 @@
+{{- define "ceftswitch.name" -}}
+{{- printf "%s" .Chart.Name -}}
+{{- end -}}
+
+{{- define "ceftswitch.fullname" -}}
+{{- printf "%s-%s" (include "ceftswitch.name" .) .Release.Name | trunc 63 | trimSuffix "-" -}}
+{{- end -}}
