@@ -8,10 +8,10 @@ image:
 
 
 db:
-  username: ceftswitchdbuser	
-  password: 6ryPb2#fsK5FXN1
-  host: 10.14.192.3
-  port: 3306
+  username: <db user name>
+  password: <password>
+  host: <ip or service name>
+  port: <port>
   name: db
 
 service:
